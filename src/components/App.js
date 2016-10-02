@@ -1,26 +1,17 @@
 import React from 'react'
+/*import {Well,
+        Navbar,
+        Nav,
+        NavItem} from 'react-bootstrap'*/
 
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Header'        
+//import {Link} from 'react-router'
 
 export default class App extends React.Component {
-	constructor(){
-		super();
-		this.state = {
-			title: "Welcome",
-		};
-	}
 
-	changeTitle(title){
-		this.setState({title});
-	}
-
-  render() {
-    return (
-    	<div>
-      		<Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-      		<Footer />
-      	</div>
-    );
-  }
-}
+    render() {
+        return (
+            <Header/>
+        );
+    }
+}       
