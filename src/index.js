@@ -4,13 +4,13 @@ import {Router,
 		Route,
 		hashHistory } from 'react-router'
 
+import {createStore} from 'react-redux'
 import App from './components/App'
 import Home from './components/Pages/Home'
 import About from './components/Pages/About'
 import Contact from './components/Pages/Contact'
 
 import './styles/bootstrap.css'
-//import './index.css'
 
 const Components=(
 	<Router history={hashHistory}>

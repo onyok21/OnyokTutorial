@@ -1,17 +1,16 @@
 import React from 'react'
-/*import {Well,
-        Navbar,
-        Nav,
-        NavItem} from 'react-bootstrap'*/
-
-import Header from './Header'        
-//import {Link} from 'react-router'
+import {Link} from 'react-router'
 
 export default class App extends React.Component {
 
     render() {
         return (
-            <Header/>
+            <div>
+				<Link to="home">home</Link>
+				<Link to="about">about</Link>
+				<Link to="contact">contact</Link>
+				{this.props.children}
+			</div>
         );
     }
 }       
